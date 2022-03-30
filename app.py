@@ -28,11 +28,20 @@ def menu():
                 <li><a href="http://localhost:5555/string-count" target = "_blank">http://localhost:5555/string-count</a></li>
                 <li>Nothing crazy, get the length of a string.</li>
                 <li>However won't work without using an online API testing tool or creating a request program.</li>
+                
             </ul>
     </ul>
+
+
     '''
     return l
-
+# <!-- Form which will send a POST request to the current URL -->
+#                 <form method="post" action="/string-count">
+#                 <label>Name:
+#                     <input name="submitted-name" autocomplete="name">
+#                 </label>
+#                 <button>Save</button>
+#                 </form>
 
 # ROUTE 1: RETURNS PONG WHEN PINGED
 @app.route('/ping', methods=['GET'])
@@ -57,6 +66,7 @@ def word():
 # ROUTE 3: RETURNS LENGTH OF STRING (SINGLE INPUT) -- ONLY WORKS WITH ONLINE API TESTING TOOL / MAKE REQUESTS PROGRAM
 @app.route('/string-count', methods = ['POST'])
 def string_count():
+
     user_word = request.get_json()
 
     len_word = len(user_word)

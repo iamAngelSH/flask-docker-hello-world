@@ -28,4 +28,4 @@ for call_route in route_callers:
   r.status_code # first, check r for errors
 
   data = r.json()
-  print(data, f' --- STATUS CODE {r.status_code}') # print the response
+  print(data, f' --- STATUS CODE {r.status_code}\n') # print the response
