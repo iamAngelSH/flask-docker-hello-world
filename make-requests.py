@@ -14,7 +14,8 @@ def call_random_word_route():
 
 # route 3 -- string count
 def call_string_count():
-  r = rq.post('http://localhost:5000/string-count', json = 'some') # make the request
+  # word = input('Input a word to see the length: ')
+  r = rq.post('http://localhost:5000/string-count', json = 'word') # make the request
   return r
 
 route_callers = [
