@@ -6,6 +6,7 @@ import requests as rq
 app = Flask(__name__)
 
 
+# MENU FOR USERS WHO WOULD LIKE TO USE THE APP
 @app.route('/')
 def menu():
     l = '''
@@ -32,11 +33,13 @@ def menu():
     '''
     return l
 
+
+# ROUTE 1: RETURNS PONG WHEN PINGED
 @app.route('/ping', methods=['GET'])
 def ping_pong():
     return jsonify('pong!')
 
-
+# ROUTE 2: RETURNS A RANDOM WORD FROM API
 @app.route('/word', methods=['GET'])
 def word():
     word = rq.get('https://random-word-api.herokuapp.com/word?number=1')
@@ -51,7 +54,7 @@ def word():
         w = w.upper()
         return jsonify(w)
 
-
+# ROUTE 3: RETURNS LENGTH OF STRING (SINGLE INPUT) -- ONLY WORKS WITH ONLINE API TESTING TOOL / MAKE REQUESTS PROGRAM
 @app.route('/string-count', methods = ['POST'])
 def string_count():
     user_word = request.get_json()
