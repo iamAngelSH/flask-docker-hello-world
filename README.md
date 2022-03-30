@@ -6,6 +6,8 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
 
 ## How to use:
 
+
+
 1. Clone this [repository](https://github.com/iamAngelSH/flask-docker-hello-world) to a directory of your choice on your terminal.
   - Command to clone:
   ```git
@@ -30,20 +32,20 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
     - Since port 5000 is for the server running on the docker container, we need to use the port running on our local machine.
     - Use the following:
       - http://localhost:5555
-7. Congrats 🥳 Flask App is up and running. You will see a menu on your web browser with what you can on this FLask App.
+7. Congrats 🥳 Flask App is up and running. You will see a menu on your web browser with what you can on this Flask App.
 
 
-### Running a program to hit each of our flask app routes
+### Running a program to hit each of our flask app routes without looking at the web browser
 Although we do have our flask app running, it is always good to test our routes and make sure they work appropriately.
 
-1. Having your flask docker container still running open a new terminal.
-  - Change into the directory that you have the repository stored in
+1. Having your flask docker container still running, open a new terminal.
+  - Change into the directory that you have the repository (Flask Project) stored in
   - Change into the repository directory
   ```terminal
   cd ~Path_to_repo
   ```
 2. Once you are in the reposiotry directory, we run another docker-compose command
-  - This command will let us execute a python script to test routes in our flask app and should return values via the terminal.
+  - This command will let us execute a python script to test the routes in our flask app and should return values via the terminal.
   ```terminal
   docker-compose exec web python make-requests.py
   ```
