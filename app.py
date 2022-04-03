@@ -1,11 +1,29 @@
 # IMPORT LIBRARIES
 from flask import Flask, jsonify, request
 import requests as rq
+from werkzeug.exceptions import HTTPException
+import json
+import logging # <-- added
+
 
 # INIT APP OBJECT
 app = Flask(__name__)
 
 
+@app.errorhandler(HTTPException)
+def handle_exception(e):
+    """Return JSON instead of HTML for HTTP errors."""
+    # start with the correct headers and status code from the error
+    logging.exception(e) # <-- added
+    response = e.get_response()
+    # replace the body with JSON
+    response.data = json.dumps({
+        "code": e.code,
+        "name": e.name,
+        "description": e.description,
+    })
+    response.content_type = "application/json"
+    return response
 # MENU FOR USERS WHO WOULD LIKE TO USE THE APP
 @app.route('/')
 def menu():

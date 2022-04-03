@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.9
 
 WORKDIR /usr/src/app
 ENV FLASK_APP=app.py
@@ -9,4 +9,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "flask", "run" "python3 make-requests.py"]
+CMD [ "flask", "run"]
