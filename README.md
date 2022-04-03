@@ -53,13 +53,18 @@ Although we do have our flask app running, it is always good to test our routes 
   ```terminal
   docker-compose exec web python make-requests.py
   ```
-3. Once you run this command, you should see 3 different results.
+3. Once you run this command, there will be results logged on your terminal.
+- If the status code is 200 (ok), you will get the following:
 ```terminal
-pong!  --- STATUS CODE 200
-EDIFNOC  --- STATUS CODE 200
-4  --- STATUS CODE 200
+pong! 
+EDIFNOC
+4
 ```
-- We can see the output that should be shown in our flask app and also the status code to make sure everything is running ok.
+- If the status code is not 200, you will see something similar to the following:
+```terminal
+{'code': 400, 'name': 'Bad Request', 'description': 'Failed to decode JSON object: None'} 
+```
+4. Tada!! 🥳 You have hit all the targets in the flask app!
 
 <hr>
 
