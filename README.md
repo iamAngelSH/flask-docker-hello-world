@@ -14,7 +14,7 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
   git clone https://github.com/iamAngelSH/flask-docker-hello-world
   ```
 2. Step in the repository directory
-  - Change Direcotry
+  - Change Directory
   ```terminal
   cd flask-docker-hello-world
   ```
@@ -35,7 +35,7 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
     - Since port 5000 is for the server running on the docker container, we need to use the port running on our local machine.
     - Use the following:
       - http://localhost:5555
-7. Congrats 🥳 Flask App is up and running. You will see a menu on your web browser with what you can on this Flask App.
+7. Congrats 🥳 Flask App is up and running. You will see a menu on your web browser with what you can do on this Flask App.
 
 <hr>
 
