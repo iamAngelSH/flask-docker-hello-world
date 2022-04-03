@@ -25,6 +25,9 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
   ```docker
   docker-compose up
   ```
+  
+**THESE NEXT STEPS IS TO USE THE FLASK APP ON THE WEB 🕸️**
+   - If you want to skip the web browser part, [SKIP TO THIS SECTION](#running-a-program-to-hit-each-of-our-flask-app-routes-without-looking-at-the-web-browser)
 6. Open a web browser
   - Once the image is the done building you should get the following link:
     - http://172.24.0.2:5000
@@ -34,13 +37,14 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
       - http://localhost:5555
 7. Congrats 🥳 Flask App is up and running. You will see a menu on your web browser with what you can on this Flask App.
 
+<hr>
 
-### Running a program to hit each of our flask app routes without looking at the web browser
+## Running a program to hit each of our flask app routes without looking at the web browser
 Although we do have our flask app running, it is always good to test our routes and make sure they work appropriately.
 
 1. Having your flask docker container still running, open a new terminal.
-  - Change into the directory that you have the repository (Flask Project) stored in
-  - Change into the repository directory
+  - Change into the directory that you have the repository (Flask Project) stored in.
+    - Change into the repository directory
   ```terminal
   cd ~Path_to_repo
   ```
