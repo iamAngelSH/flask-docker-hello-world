@@ -19,7 +19,7 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
   cd flask-docker-hello-world
   ```
 3. Here you should have all the contents you need.
-4. Having Docker running already on your computer, we can get started with the FLask App.
+4. Having Docker running already on your computer, we can get started with the Flask App.
 5. Let's build the image
   - Run docker-compose up in the same directory you are in
   ```docker
