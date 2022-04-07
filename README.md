@@ -11,7 +11,7 @@ This is a very simple and generic Flask App that uses GET and Post methods. It a
 1. Clone this [repository](https://github.com/iamAngelSH/flask-docker-hello-world) to a directory of your choice on your terminal.
   - Command to clone:
   ```git
-  git clone https://github.com/iamAngelSH/flask-docker-hello-world
+  git clone https://github.com/iamAngelSH/flask-docker-hello-world.git
   ```
 2. Step in the repository directory
   - Change Directory
